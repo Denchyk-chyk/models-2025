@@ -1,0 +1,105 @@
+﻿КП|кількість логічних рядків коду на одну функціональну точку
+BasicAssembler|320
+Autocoder|320
+Netron/CAP|296
+MacroAssembler|213
+C|128
+Пакетні файли DOS|128
+Basic|107
+Макроси Lotus|107
+ALGOL|105
+COBOL|105
+FORTRAN|105
+JOVIAL|105
+Змішані мови програмування|105
+JCL|96
+VPF|95
+Pascal|91
+COBOL (ANSI 85)|91
+APS|86
+Slogan|81
+RPG|80
+Modula-2|80
+PL/1|80
+Паралельний Pascal|80
+Fortran 95|71
+Mantis|71
+Sabretalk|70
+Mapper|69
+ColdFusion|68
+Datastage|67
+Ideal|66
+Basic (ANSI)|64
+FORTH|64
+LISP|64
+PROLOG|64
+Powerhouse|63
+Uniface|61
+.NET|60
+JSP|59
+LOGO|58
+C#|58
+J2EE|57
+Розширений LISP|56
+RPG III|56
+ASP|56
+Java|55
+JavaScript|54
+C++|53
+YACC|53
+Culprit|51
+Natural|51
+KML|50
+VisualBasic|50
+REXX|50
+Ada 95|49
+PL/SQL|47
+CICS|46
+SIMULA|46
+Taskmate|45
+Focus|45
+WebScripts|44
+Pacbase|42
+Мови баз даних|40
+Clipper DB и dBase III|40
+Informix|40
+Oracle и SYBASE|40
+Openroad|39
+Access|38
+VBScript|38
+Advantage|38
+PeopleSoft|37
+Cool:Gen/IEF|37
+DBase IV|36
+Мови підтримки прийняття рішень|35
+FoxPro 2.5|34
+APL|32
+Статичні мови (SAS)|32
+Maestro|30
+DELPHI|29
+Стандартні об’єктно-орієнтовані мови|29
+Powerbuilder|28
+VB.Net|28
+OBJECTIVE-C|27
+LotusScript|23
+OracleDeveloper /2000|23
+Smalltalk|21
+awk|21
+EIFFEL|21
+Shell-сценарії (Perl)|21
+Стандартні мови 4-го покоління (4GL)|20
+OR3 (4GL)|20
+ApplicationBuilder|20
+CORBA|20
+CristalReports|20
+Datatrieve|20
+CLIPPER|19
+ABAP (SAP)|18
+HTML 3.0|15
+SiebelTools|13
+SQL|13
+Easytrieve+|13
+SQL Forms|11
+Excel|6
+QUATTRO PRO|6
+Мови створення піктограм|4

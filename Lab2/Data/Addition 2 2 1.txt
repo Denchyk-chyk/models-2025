@@ -1,0 +1,4 @@
+﻿Середовища розробки додатків
+(Borland)|1
+C++ Builder (Borland)|2
+Visual С++ (Microsoft)|3
