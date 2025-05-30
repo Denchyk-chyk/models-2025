@@ -18,7 +18,7 @@ Console.WriteLine($"Розмір коду в тисячах логічних р�
 // Показники розробки, Ri 
 var developmentParameters = Reader.Selectors(Path.Combine(AppContext.BaseDirectory, "Data", "Table 3.txt"), float.Parse)[0];
 // E - показник масштабу трудомісткостістворення (розробки)
-var scaleParameter = 0.91 + 0.01 * developmentParameters.Select(p => p.Select()).Sum();
+var scaleParameter = 0.91 + (0.01 * developmentParameters.Select(p => p.Select()).Sum());
 Console.WriteLine($"Показник масштабу трудомісткостістворення (розробки) - {scaleParameter:f2}");
 
 // Множники витрат, Zi
