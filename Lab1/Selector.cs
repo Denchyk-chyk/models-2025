@@ -2,6 +2,12 @@
 
 namespace Lab1
 {
+	/// <summary>
+	/// Клас, що містить набір пар опис-значення й дозволяє користувачу вибирати з них
+	/// </summary>
+	/// <typeparam name="T">Тип значення</typeparam>
+	/// <param name="title"></param>
+	/// <param name="options"></param>
 	public class Selector<T>((string name, string description) title, (string condition, T value)[] options)
 	{
 		protected readonly (string name, string description) title = title;
@@ -17,6 +23,32 @@ namespace Lab1
 			}
 		}
 
+		/// <summary>
+		/// Виділяє одне значення
+		/// </summary>
+		/// <param name="showValues">Варто ставити false при значеннях 1,2,3...</param>
+		/// <returns></returns>
+		public T Select(bool showValues = true)
+		{
+			Display(showValues);
+
+			try 
+			{
+				return options[int.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture) - 1].value;
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine(e.Message);
+				return Select();
+			}
+		}
+
+
+		/// <summary>
+		/// Дозволяє виділити кілька варіантів через пропуск
+		/// </summary>
+		/// <param name="showValues">Варто ставити false при значеннях 1,2,3...</param>
+		/// <returns></returns>
 		public List<T> SelectMany(bool showValues = true)
 		{
 			Display(showValues);
@@ -40,21 +72,12 @@ namespace Lab1
 			}
 		}
 
-		public T Select(bool showValues = true)
-		{
-			Display(showValues);
 
-			try 
-			{
-				return options[int.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture) - 1].value;
-			}
-			catch (Exception e)
-			{
-				Console.WriteLine(e.Message);
-				return Select();
-			}
-		}
-
+		/// <summary>
+		/// Автоматично вибирає певний варіант на основі переданої функції
+		/// </summary>
+		/// <param name="automation"></param>
+		/// <returns></returns>
 		public T Select(Func<(string condition, T value)[], T> automation) => automation(options);
 	}
 }
